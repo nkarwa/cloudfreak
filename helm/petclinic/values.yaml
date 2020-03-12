@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: nkarwa/petclinic
-  tag: latest
+  tag: {$env.BUILD_NUMBER}
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
